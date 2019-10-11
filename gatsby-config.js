@@ -1,18 +1,12 @@
 module.exports = {
   siteMetadata: {
-    title: `Julia Doe`,
-    description: `A minimal blog starter built with Gatsbyjs. The needed Gatsby files are included.`,
-    author: `@niklasmtj`,
+    title: `Simon Golms`,
+    description: `App & Website Developer `,
+    author: `Simon Golms | simon@gol.ms`,
+    siteUrl: `https://gol.ms`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `markdown-pages`,
-        path: `${__dirname}/src/content`,
-      },
-    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -24,24 +18,27 @@ module.exports = {
     `gatsby-plugin-sharp`,
     `gatsby-plugin-emotion`,
     {
-      resolve: `gatsby-transformer-remark`,
+      resolve: `gatsby-plugin-prefetch-google-fonts`,
       options: {
-        plugins: [`gatsby-remark-reading-time`, {
-          resolve: `gatsby-remark-prismjs`,
-          options: {
-            aliases:{sh: "bash", js:"javascript"},
-            showLineNumbers: true,
-          }
-        }],
+        fonts: [
+          {
+            family: `Source Sans Pro`,
+            subsets: [`latin`],
+          },
+          {
+            family: `Playfair Display`,
+          },
+          {
+            family: `Roboto`,
+          },
+        ],
       },
     },
     {
       resolve: `gatsby-plugin-netlify`,
       options: {
         headers: {
-          "/*": [
-            "Strict-Transport-Security: max-age=63072000"
-          ]
+          "/*": ["Strict-Transport-Security: max-age=63072000"],
         }, // option to add more headers. `Link` headers are transformed by the below criteria
         allPageHeaders: [], // option to add headers for all pages. `Link` headers are transformed by the below criteria
         mergeSecurityHeaders: true, // boolean to turn off the default security headers
@@ -54,13 +51,13 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `gol.ms`,
+        short_name: `gol.ms`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
-        display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        background_color: `#131313`,
+        theme_color: `#131313`,
+        display: `standalone`,
+        icon: `src/images/icon.png`, // This path is relative to the root of the site.
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality

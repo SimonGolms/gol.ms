@@ -4,7 +4,7 @@ code {
 
 body {
   margin: 0;
-  font-family: 'Nunito', 'Avenir', 'Helvetica', 'sans-serif';
+  font-family: Source Sans Pro, Arial, Sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -616,6 +616,7 @@ pre tt:after {
   padding-left: 2.8em;
   overflow: initial;
 }
+
 @media only screen and (max-width: 480px) {
   html {
     font-size: 100%;

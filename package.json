@@ -1,53 +1,66 @@
 {
-  "name": "gatsby-starter-julia",
+  "name": "gol.ms-website",
   "private": true,
-  "description": "A minimal blog template built with Gatsby",
+  "description": "The personal website from Simon Golms",
   "version": "0.1.0",
-  "author": "Niklas Metje <hi@niklasmtj.de>",
+  "author": "Simon Golms <simon@gol.ms>",
   "dependencies": {
-    "@emotion/core": "^10.0.10",
-    "@emotion/styled": "^10.0.11",
-    "gatsby": "^2.8.5",
-    "gatsby-image": "^2.1.2",
-    "gatsby-plugin-emotion": "^4.0.7",
-    "gatsby-plugin-manifest": "^2.1.1",
-    "gatsby-plugin-netlify": "^2.1.2",
-    "gatsby-plugin-offline": "^2.1.1",
-    "gatsby-plugin-react-helmet": "^3.0.12",
-    "gatsby-plugin-sharp": "^2.1.3",
-    "gatsby-remark-prismjs": "^3.2.10",
+    "@emotion/core": "^10.0.17",
+    "@emotion/styled": "^10.0.17",
+    "@rebass/grid": "^6.1.0",
+    "calculate-size": "^1.1.1",
+    "emotion-theming": "^10.0.18",
+    "gatsby": "^2.15.15",
+    "gatsby-image": "^2.2.19",
+    "gatsby-plugin-emotion": "^4.1.6",
+    "gatsby-plugin-feed": "^2.3.12",
+    "gatsby-plugin-manifest": "^2.2.16",
+    "gatsby-plugin-netlify": "^2.1.13",
+    "gatsby-plugin-offline": "^3.0.6",
+    "gatsby-plugin-prefetch-google-fonts": "^1.4.3",
+    "gatsby-plugin-react-helmet": "^3.1.7",
+    "gatsby-plugin-sharp": "^2.2.22",
+    "gatsby-remark-prismjs": "^3.3.13",
     "gatsby-remark-reading-time": "^1.0.1",
-    "gatsby-source-filesystem": "^2.0.38",
-    "gatsby-transformer-remark": "^2.3.12",
-    "gatsby-transformer-sharp": "^2.1.21",
+    "gatsby-source-filesystem": "^2.1.22",
+    "gatsby-transformer-remark": "^2.6.22",
+    "gatsby-transformer-sharp": "^2.2.14",
     "prism-themes": "^1.1.0",
-    "prismjs": "^1.16.0",
+    "prismjs": "^1.17.1",
     "prop-types": "^15.7.2",
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
     "react-helmet": "^5.2.1",
-    "typeface-nunito": "0.0.72"
+    "react-icons": "^3.7.0",
+    "react-transition-group": "^4.3.0",
+    "styled-components": "^4.3.2",
+    "styled-theming": "^2.2.0",
+    "typeface-nunito": "0.0.72",
+    "typeface-source-sans-pro": "0.0.75"
   },
   "devDependencies": {
-    "prettier": "^1.17.1"
+    "prettier": "^1.18.2"
   },
   "keywords": [
-    "gatsby"
+    "gatsby",
+    "react",
+    "landingpage"
   ],
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
     "format": "prettier --write src/**/*.{js,jsx}",
+    "repair": "rm -rf .cache/ public/ && npm install",
     "start": "npm run develop",
     "serve": "gatsby serve",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+    "url": "https://github.com/simongolms/gol.ms"
   },
   "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://github.com/simongolms/gol.ms/issues"
   }
 }
