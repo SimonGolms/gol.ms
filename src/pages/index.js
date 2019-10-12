@@ -23,7 +23,8 @@ const IndexPage = () => (
     <Container>
       <Layout>
         <SEO
-          title="Simon Golms"
+          title="Simon Golms | App & Website Developer"
+          description="I'm Simon, an App & Website Developer, Tekkie, Sportsman and Traveler with love for filter coffee and a good beer and so much more... Find it out."
           keywords={[
             `simon`,
             `golms`,
