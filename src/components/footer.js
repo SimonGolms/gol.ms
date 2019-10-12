@@ -1,14 +1,8 @@
 import React from "react"
-import { Link } from "gatsby"
 import styled from "@emotion/styled"
-import { FaGithub, FaLinkedin, FaBlog } from "react-icons/fa"
+import { FaGithub, FaLinkedin } from "react-icons/fa"
 
 const IconLink = styled.a`
-  margin-left: 0.5em;
-  color: ${props => props.theme.body};
-`
-
-const GatsbyLink = styled(Link)`
   margin-left: 0.5em;
   color: ${props => props.theme.body};
 `
