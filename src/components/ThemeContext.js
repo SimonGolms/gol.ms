@@ -1,4 +1,5 @@
 import React, { createContext, useContext, useEffect, useState } from "react"
+import { Global } from "@emotion/core"
 import { ThemeProvider as EmotionThemeProvider } from "emotion-theming"
 import theme from "./theme.js"
 
@@ -57,6 +58,13 @@ const ThemeProvider = ({ children }) => {
 
   return (
     <EmotionThemeProvider theme={computedTheme}>
+      <Global
+        styles={`
+          body  {
+            background-color: ${computedTheme.background};
+          }
+        `}
+      />
       <ThemeContext.Provider
         value={{
           dark: themeState.dark,

@@ -2,8 +2,8 @@ import backgroundLight from "../images/background-light.jpg"
 import backgroundDark from "../images/background-dark.jpg"
 
 const white = "#FFFFFF"
-const black = "#161617"
-const gray = "#F8F8F9"
+const black = "#141414"
+const gray = "#d4d4d4"
 
 const themeLight = {
   background: gray,
