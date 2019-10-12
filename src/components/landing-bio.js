@@ -36,6 +36,11 @@ const NameHeader = styled.h1`
   letter-spacing: 0.25px;
   margin-bottom: 0;
 `
+const DescriptionHidden = styled.h2`
+  display: none;
+  font-size: 1.4rem;
+  white-space: nowrap;
+`
 
 const getDefaultStyle = props => {
   return {
@@ -70,8 +75,8 @@ const LandingBio = () => {
     "Fan of filter coffee",
     "Photographer",
     "Traveller",
-    "Soccer player, runner, cyclist and skier",
     "Scooter driver",
+    "Sportsman",
     "Beer Lover",
     "... and happy",
   ]
@@ -129,6 +134,11 @@ const LandingBio = () => {
             )}
           </Transition>
         </SwitchTransition>
+        {DESCRIPTIONS.map((description, i) => (
+          <DescriptionHidden key={`description-${i}`}>
+            {description}
+          </DescriptionHidden>
+        ))}
       </Container>
     </OuterContainer>
   )
