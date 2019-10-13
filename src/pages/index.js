@@ -19,51 +19,53 @@ const Container = styled.div`
 `
 
 const IndexPage = () => (
-  <ThemeProvider>
-    <Container>
-      <Layout>
-        <SEO
-          title="Simon Golms | App & Website Developer"
-          description="I'm Simon, an App & Website Developer, Tekkie, Sportsman and Traveler with love for filter coffee and a good beer and so much more... Find it out."
-          keywords={[
-            `simon`,
-            `golms`,
-            `simon golms`,
-            `developer`,
-            `mobile app`,
-            `website`,
-            `fisch`,
-            `boehringer`,
-            `boehringer ingelheim`,
-            `ionic`,
-            `js`,
-            `javascript`,
-            `npm`,
-            `node`,
-            `angular`,
-            `react`,
-            `react`,
-            `blog`,
-            `azure`,
-            `devops`,
-            `azure devops`,
-            `openshift`,
-            `jenkins`,
-            `apple`,
-            `ios`,
-            `mac`,
-            `android`,
-            `biberach`,
-            `ulm`,
-            `germany`,
-          ]}
-        />
-        <Header />
-        <LandingBio />
-        <Footer />
-      </Layout>
-    </Container>
-  </ThemeProvider>
+  <>
+    <SEO
+      title="Simon Golms | App & Website Developer"
+      description="I am Simon, an App & Website Developer, Tekkie, Sportsman and Traveler with love for filter coffee and a good beer and so much more... Find it out."
+      keywords={[
+        `simon`,
+        `golms`,
+        `simon golms`,
+        `developer`,
+        `mobile app`,
+        `website`,
+        `fisch`,
+        `boehringer`,
+        `boehringer ingelheim`,
+        `ionic`,
+        `js`,
+        `javascript`,
+        `npm`,
+        `node`,
+        `angular`,
+        `react`,
+        `react`,
+        `blog`,
+        `azure`,
+        `devops`,
+        `azure devops`,
+        `openshift`,
+        `jenkins`,
+        `apple`,
+        `ios`,
+        `mac`,
+        `android`,
+        `biberach`,
+        `ulm`,
+        `germany`,
+      ]}
+    />
+    <ThemeProvider>
+      <Container>
+        <Layout>
+          <Header />
+          <LandingBio />
+          <Footer />
+        </Layout>
+      </Container>
+    </ThemeProvider>
+  </>
 )
 
 export default IndexPage
