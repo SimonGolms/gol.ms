@@ -1,8 +1,9 @@
 import React from "react"
 import styled from "@emotion/styled"
 import { FaGithub, FaLinkedin } from "react-icons/fa"
+import { OutboundLink } from "gatsby-plugin-google-analytics"
 
-const IconLink = styled.a`
+const IconLink = styled(OutboundLink)`
   margin-left: 0.5em;
   color: ${props => props.theme.body};
 `
