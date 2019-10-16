@@ -31,10 +31,10 @@ const Description = styled.span`
 
 const NameHeader = styled.h1`
   font-family: Source Sans Pro, Arial, Sans-serif;
-  font-size: 3.5rem;
+  font-size: 2.6rem;
   font-weight: 400;
   letter-spacing: 0.25px;
-  margin-bottom: 0;
+  margin-bottom: 1rem;
 `
 const DescriptionHidden = styled.h2`
   display: none;
