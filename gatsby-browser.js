@@ -10,4 +10,4 @@ exports.onInitialClientRender = () => {
   require("typeface-source-sans-pro")
 }
 
-exports.onServiceWorkerUpdateReady = () => window.location.reload(true)
+// exports.onServiceWorkerUpdateReady = () => window.location.reload(true)
