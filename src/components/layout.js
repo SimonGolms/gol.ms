@@ -7,13 +7,12 @@
 
 import React from "react"
 import PropTypes from "prop-types"
-import styled from "@emotion/styled"
-
-// import "./layout.css"
+import styled from "styled-components"
 
 const Content = styled.div`
-  padding: 2rem;
+  color: ${props => props.theme.body};
   height: 100vh;
+  padding: 2rem;
 `
 
 const Layout = ({ children }) => {

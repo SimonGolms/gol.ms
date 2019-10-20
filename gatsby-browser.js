@@ -3,11 +3,15 @@
  *
  * See: https://www.gatsbyjs.org/docs/browser-apis/
  */
+import React from "react"
+import { ThemeProvider } from "./src/context/ThemeContext"
 
-// You can delete this file if you're not using it
-
-exports.onInitialClientRender = () => {
+export const onInitialClientRender = () => {
   require("typeface-source-sans-pro")
+}
+
+export const wrapRootElement = ({ element }) => {
+    return <ThemeProvider>{element}</ThemeProvider>
 }
 
 // exports.onServiceWorkerUpdateReady = () => window.location.reload(true)

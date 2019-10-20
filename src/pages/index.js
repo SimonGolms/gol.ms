@@ -1,24 +1,29 @@
 import React from "react"
-import styled from "@emotion/styled"
+import { createGlobalStyle } from "styled-components"
 
 import LandingBio from "../components/landing-bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Footer from "../components/footer"
-import { ThemeProvider } from "./../components/ThemeContext"
 import Header from "../components/header"
 
 import "./../components/layout.css"
 
-const Container = styled.div`
-  color: ${props => props.theme.body};
-  background-image: url(${props => props.theme.backgroundImage});
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
+const GlobalStyle = createGlobalStyle`
+  * {
+    font-family: Source Sans Pro, Arial, Sans-serif;
+    body {
+      background-color: ${props => props.theme.background};
+      background-image: url(${props => props.theme.backgroundImage});
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
+      margin: 0;
+    }
+  }
 `
 
-const IndexPage = () => (
+const IndexPage = props => (
   <>
     <SEO
       title="Simon Golms | App & Website Developer"
@@ -56,15 +61,12 @@ const IndexPage = () => (
         `germany`,
       ]}
     />
-    <ThemeProvider>
-      <Container>
-        <Layout>
-          <Header />
-          <LandingBio />
-          <Footer />
-        </Layout>
-      </Container>
-    </ThemeProvider>
+    <GlobalStyle />
+    <Layout>
+      <Header />
+      <LandingBio />
+      <Footer />
+    </Layout>
   </>
 )
 
