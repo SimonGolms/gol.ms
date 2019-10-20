@@ -13,8 +13,8 @@ const GlobalStyle = createGlobalStyle`
   * {
     font-family: Source Sans Pro, Arial, Sans-serif;
     body {
-      background-color: ${props => props.theme.background};
-      background-image: url(${props => props.theme.backgroundImage});
+      background-color: ${typeof window !== `undefined` ? props => props.theme.background : '#141414'};
+      background-image: url(${ typeof window !== `undefined` ? props => props.theme.backgroundImage : '../images/background-dark.jpg'});
       background-repeat: no-repeat;
       background-position: center center;
       background-size: cover;
