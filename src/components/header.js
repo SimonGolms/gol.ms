@@ -1,7 +1,8 @@
 import React from "react"
-import styled from "@emotion/styled"
+import styled from "styled-components"
+
 import { FaSun, FaMoon } from "react-icons/fa"
-import { useTheme } from "./ThemeContext"
+import { useTheme } from "./../context/ThemeContext"
 
 const Container = styled.header`
   align-self: flex-end;

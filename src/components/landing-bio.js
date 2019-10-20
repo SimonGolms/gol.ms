@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react"
 import PropTypes from "prop-types"
-import styled from "@emotion/styled"
+import styled from "styled-components"
 import { SwitchTransition, Transition } from "react-transition-group"
 import calculateSize from "calculate-size"
 
@@ -30,7 +30,6 @@ const Description = styled.span`
 `
 
 const NameHeader = styled.h1`
-  font-family: Source Sans Pro, Arial, Sans-serif;
   font-size: 2.6rem;
   font-weight: 400;
   letter-spacing: 0.25px;
@@ -82,6 +81,7 @@ const LandingBio = () => {
   ]
 
   const [description, setDescription] = useState(0)
+
   useEffect(() => {
     const id = setInterval(() => {
       setDescription(
@@ -91,11 +91,15 @@ const LandingBio = () => {
     return () => clearInterval(id)
   }, [description, DESCRIPTIONS])
 
-  const textWidth =
-    calculateSize(DESCRIPTIONS[description], {
-      font: "Source Sans Pro",
-      fontSize: "1.4rem",
-    }).width + TEXT_WIDTH_OFFSET
+  // Needed for error capture during SSR
+  let textWidth = 200
+  if (typeof window !== `undefined`) {
+    textWidth =
+      calculateSize(DESCRIPTIONS[description], {
+        font: "Source Sans Pro",
+        fontSize: "1.4rem",
+      }).width + TEXT_WIDTH_OFFSET
+  }
 
   const transitionTime = TRANSITION_SPEED * textWidth
 

@@ -1,6 +1,6 @@
 import React, { createContext, useContext, useEffect, useState } from "react"
-import { Global } from "@emotion/core"
-import { ThemeProvider as EmotionThemeProvider } from "emotion-theming"
+import { ThemeProvider as StyledThemeProvider } from "styled-components"
+
 import theme from "./theme.js"
 
 const defaultContextData = {
@@ -9,6 +9,8 @@ const defaultContextData = {
 }
 
 const getPrefersColorScheme = () => {
+  // Needed for error capture during SSR
+  if (typeof window === `undefined`) return "dark"
   if (window.matchMedia("(prefers-color-scheme: light)").matches) return "light"
   if (window.matchMedia("(prefers-color-scheme: dark)").matches) return "dark"
   if (window.matchMedia("(prefers-color-scheme: no-preference)").matches)
@@ -16,6 +18,7 @@ const getPrefersColorScheme = () => {
 }
 
 const ThemeContext = createContext(defaultContextData)
+
 const useTheme = () => useContext(ThemeContext)
 
 const useEffectDarkMode = () => {
@@ -57,14 +60,7 @@ const ThemeProvider = ({ children }) => {
   const computedTheme = themeState.dark ? theme("dark") : theme("light")
 
   return (
-    <EmotionThemeProvider theme={computedTheme}>
-      <Global
-        styles={`
-          body  {
-            background-color: ${computedTheme.background};
-          }
-        `}
-      />
+    <StyledThemeProvider theme={computedTheme}>
       <ThemeContext.Provider
         value={{
           dark: themeState.dark,
@@ -73,7 +69,7 @@ const ThemeProvider = ({ children }) => {
       >
         {children}
       </ThemeContext.Provider>
-    </EmotionThemeProvider>
+    </StyledThemeProvider>
   )
 }
 
