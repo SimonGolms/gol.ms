@@ -1,13 +1,13 @@
-import React, { useEffect, useState } from "react"
-import PropTypes from "prop-types"
-import styled from "styled-components"
-import { SwitchTransition, Transition } from "react-transition-group"
-import calculateSize from "calculate-size"
+import React, { useEffect, useState } from "react";
+import PropTypes from "prop-types";
+import styled from "styled-components";
+import { SwitchTransition, Transition } from "react-transition-group";
+import calculateSize from "calculate-size";
 
 const Container = styled.div`
   text-align: start;
   max-width: 385px;
-`
+`;
 
 const OuterContainer = styled.div`
   display: flex;
@@ -15,7 +15,7 @@ const OuterContainer = styled.div`
   justify-content: center;
   flex-direction: row;
   height: calc(100vh - 4rem - 3rem);
-`
+`;
 
 const Description = styled.span`
   display: inline-block;
@@ -27,45 +27,44 @@ const Description = styled.span`
   white-space: nowrap;
   border-right: 1px solid;
   border-color: ${props => props.theme.body};
-`
+`;
 
 const NameHeader = styled.h1`
   font-size: 2.6rem;
   font-weight: 400;
   letter-spacing: 0.25px;
   margin-bottom: 1rem;
-`
+`;
 const DescriptionHidden = styled.h2`
   display: none;
   font-size: 1.4rem;
   white-space: nowrap;
-`
+`;
 
 const getDefaultStyle = props => {
   return {
     transition: `width ease ${props.time ? props.time : 1500}ms`,
     width: "100%",
-  }
-}
+  };
+};
 
 const getTransitionStyles = props => {
   return {
     entering: { width: "0" },
     entered: { width: `${props.width ? props.width + "px" : "100%"}` },
-    // entered: { width: `400px` },
     exiting: { width: "0" },
     exited: { width: "0" },
-  }
-}
+  };
+};
 
 const LandingBio = () => {
   // How long should the description be displayed?
-  const SHOW_TIME = 5000 // time in ms
+  const SHOW_TIME = 5000; // time in ms
 
   // Constant for the calculation of the transistion speed
-  const TRANSITION_SPEED = 1500 / 400 // time in ms / number of pixel
+  const TRANSITION_SPEED = 1500 / 400; // time in ms / number of pixel
 
-  const TEXT_WIDTH_OFFSET = 10
+  const TEXT_WIDTH_OFFSET = 10;
 
   // All descriptions which will be displayed in this order
   const DESCRIPTIONS = [
@@ -78,35 +77,35 @@ const LandingBio = () => {
     "Sportsman",
     "Beer Lover",
     "... and happy",
-  ]
+  ];
 
-  const [description, setDescription] = useState(0)
+  const [description, setDescription] = useState(0);
 
   useEffect(() => {
     const id = setInterval(() => {
       setDescription(
         description < DESCRIPTIONS.length - 1 ? description + 1 : 0
-      )
-    }, SHOW_TIME)
-    return () => clearInterval(id)
-  }, [description, DESCRIPTIONS])
+      );
+    }, SHOW_TIME);
+    return () => clearInterval(id);
+  }, [description, DESCRIPTIONS]);
 
   // Needed for error capture during SSR
-  let textWidth = 200
+  let textWidth = 200;
   if (typeof window !== `undefined`) {
     textWidth =
       calculateSize(DESCRIPTIONS[description], {
         font: "Source Sans Pro",
         fontSize: "1.4rem",
-      }).width + TEXT_WIDTH_OFFSET
+      }).width + TEXT_WIDTH_OFFSET;
   }
 
-  const transitionTime = TRANSITION_SPEED * textWidth
+  const transitionTime = TRANSITION_SPEED * textWidth;
 
   const transitionStyles = getTransitionStyles({
     width: textWidth,
-  })
-  const defaultStyle = getDefaultStyle({ time: transitionTime })
+  });
+  const defaultStyle = getDefaultStyle({ time: transitionTime });
 
   return (
     <OuterContainer>
@@ -145,15 +144,15 @@ const LandingBio = () => {
         ))}
       </Container>
     </OuterContainer>
-  )
-}
+  );
+};
 
 NameHeader.propTypes = {
   siteTitle: PropTypes.string,
-}
+};
 
 NameHeader.defaultProps = {
   siteTitle: ``,
-}
+};
 
-export default LandingBio
+export default LandingBio;

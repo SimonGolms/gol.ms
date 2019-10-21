@@ -1,12 +1,12 @@
-import React from "react"
-import styled from "styled-components"
-import { FaGithub, FaLinkedin } from "react-icons/fa"
-import { OutboundLink } from "gatsby-plugin-google-analytics"
+import React from "react";
+import styled from "styled-components";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { OutboundLink } from "gatsby-plugin-google-analytics";
 
 const IconLink = styled(OutboundLink)`
   margin-left: 0.5em;
   color: ${props => props.theme.body};
-`
+`;
 
 const StyledFooter = styled.footer`
   min-height: 3rem;
@@ -14,7 +14,7 @@ const StyledFooter = styled.footer`
   display: flex;
   justify-content: flex-end;
   font-size: 1.5rem;
-`
+`;
 
 const Footer = () => (
   <StyledFooter>
@@ -33,6 +33,6 @@ const Footer = () => (
       <FaGithub />
     </IconLink>
   </StyledFooter>
-)
+);
 
-export default Footer
+export default Footer;

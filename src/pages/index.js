@@ -1,27 +1,36 @@
-import React from "react"
-import { createGlobalStyle } from "styled-components"
+import React from "react";
+import { createGlobalStyle } from "styled-components";
 
-import LandingBio from "../components/landing-bio"
-import Layout from "../components/layout"
-import SEO from "../components/seo"
-import Footer from "../components/footer"
-import Header from "../components/header"
+import LandingBio from "../components/landing-bio";
+import Layout from "../components/layout";
+import SEO from "../components/seo";
+import Footer from "../components/footer";
+import Header from "../components/header";
 
-import "./../components/layout.css"
+import "./../components/layout.css";
 
 const GlobalStyle = createGlobalStyle`
   * {
     font-family: Source Sans Pro, Arial, Sans-serif;
     body {
-      background-color: ${typeof window !== `undefined` ? props => props.theme.background : '#141414'};
-      background-image: url(${ typeof window !== `undefined` ? props => props.theme.backgroundImage : '../images/background-dark.jpg'});
+      background-color: ${
+        typeof window !== `undefined`
+          ? props => props.theme.background
+          : "#141414"
+      };
+      background-image: url(
+        ${
+          typeof window !== `undefined`
+            ? props => props.theme.backgroundImage
+            : "../images/background-dark.jpg"
+        });
       background-repeat: no-repeat;
       background-position: center center;
       background-size: cover;
       margin: 0;
     }
   }
-`
+`;
 
 const IndexPage = props => (
   <>
@@ -68,6 +77,6 @@ const IndexPage = props => (
       <Footer />
     </Layout>
   </>
-)
+);
 
-export default IndexPage
+export default IndexPage;

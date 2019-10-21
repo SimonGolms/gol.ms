@@ -1,5 +1,5 @@
 exports.createPages = ({ graphql, actions }) => {
-  const { createRedirect } = actions
+  const { createRedirect } = actions;
 
   // Legacy Redirects
   createRedirect({
@@ -7,8 +7,8 @@ exports.createPages = ({ graphql, actions }) => {
     toPath: "http://www.qlckrmote.de",
     isPermanent: true,
     redirectInBrowser: true,
-  })
-}
+  });
+};
 
 exports.onCreateWebpackConfig = (
   { stage, getConfig, actions },
@@ -34,8 +34,8 @@ exports.onCreateWebpackConfig = (
         path: getConfig().output.path,
         publicPath: getConfig().output.publicPath,
       },
-    }
+    };
 
-    actions.replaceWebpackConfig(newWebpackConfig)
+    actions.replaceWebpackConfig(newWebpackConfig);
   }
-}
+};
