@@ -8,7 +8,7 @@ const Container = styled.header`
   align-self: flex-end;
   display: flex;
   justify-content: flex-end;
-  font-size: 1.5rem;
+  font-size: 2rem;
 `;
 
 const Header = () => {
