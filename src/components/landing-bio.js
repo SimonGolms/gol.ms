@@ -27,6 +27,13 @@ const Description = styled.span`
   white-space: nowrap;
   border-right: 1px solid;
   border-color: ${props => props.theme.body};
+  animation: blink-animation 1s steps(5, start) infinite;
+
+  @keyframes blink-animation {
+    to {
+      border-right: 1px none;
+    }
+  }
 `;
 
 const NameHeader = styled.h1`
