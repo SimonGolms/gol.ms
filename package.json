@@ -13,6 +13,8 @@
     "styled-jsx-plugin-postcss": "^4.0.1"
   },
   "devDependencies": {
+    "@commitlint/cli": "^12.1.4",
+    "@commitlint/config-conventional": "^12.1.4",
     "@next/bundle-analyzer": "^10.2.3",
     "@tailwindcss/jit": "^0.1.18",
     "@types/node": "^15.6.1",
