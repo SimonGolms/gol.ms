@@ -57,6 +57,7 @@
     "build-stats": "ANALYZE=true npm run build",
     "export": "next export -o dist",
     "build-prod": "run-s clean build export",
+    "prepare": "husky install",
     "release:ci": "semantic-release",
     "repair": "npx rimraf .next dist node_modules && npm install",
     "lint": "eslint --ext .js,.jsx,.ts,.tsx ."
