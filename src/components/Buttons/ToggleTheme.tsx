@@ -1,13 +1,14 @@
 import React, { useEffect, useState } from 'react';
-import {
-  IoSunnySharp, IoMoonSharp,
-} from 'react-icons/io5';
+import { IoSunnySharp, IoMoonSharp } from 'react-icons/io5';
 
 export const ToggleTheme = () => {
   const [theme, setTheme] = useState('light');
 
   useEffect(() => {
-    if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+    if (
+      localStorage.theme === 'dark' ||
+      (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)
+    ) {
       document.documentElement.classList.add('dark');
       setTheme('dark');
     } else {
@@ -28,7 +29,12 @@ export const ToggleTheme = () => {
   };
 
   return (
-    <button className="text-4xl text-gray-900 dark:text-white" onClick={handleOnClick} type="button">
+    <button
+      aria-label="Toggle Theme"
+      className="text-4xl text-gray-900 dark:text-white"
+      onClick={handleOnClick}
+      type="button"
+    >
       {theme === 'dark' ? <IoSunnySharp /> : <IoMoonSharp />}
     </button>
   );
