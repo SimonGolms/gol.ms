@@ -1,4 +1,4 @@
-import React, { useEffect, useMemo, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import { Cursor } from './Cursor';
 
 export type TypeWriterTextProps = {

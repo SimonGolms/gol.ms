@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { IoSunnySharp, IoMoonSharp } from 'react-icons/io5';
 
-export const ToggleTheme = () => {
+export const ToggleTheme: React.FC = () => {
   const [theme, setTheme] = useState('light');
 
   useEffect(() => {

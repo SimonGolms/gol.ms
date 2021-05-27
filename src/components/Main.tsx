@@ -1,10 +1,9 @@
-import React, { ReactNode } from 'react';
 import { Footer } from './Footer';
 import { Header } from './Header';
 import { TypeWriter } from './TypeWriter';
 
 type Props = {
-  meta: ReactNode;
+  meta: React.ReactNode;
 };
 
 export const Main: React.FC<Props> = ({ meta }) => {
