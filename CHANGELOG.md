@@ -1,3 +1,10 @@
+## [1.1.2](https://github.com/simongolms/gol.ms/compare/v1.1.1...v1.1.2) (2021-05-27)
+
+
+### Bug Fixes
+
+* set body background color to match image ([3b61796](https://github.com/simongolms/gol.ms/commit/3b61796ed8daf7a28eb8a5908acc8e594cd69d5d))
+
 ## [1.1.1](https://github.com/simongolms/gol.ms/compare/v1.1.0...v1.1.1) (2021-05-27)
 
 
