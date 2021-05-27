@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/simongolms/gol.ms/compare/v1.0.0...v1.1.0) (2021-05-27)
+
+
+### Features
+
+* **accessibility:** add aria labels to buttons and links ([4120830](https://github.com/simongolms/gol.ms/commit/41208304d390d764612949bbf259acf975a4306c))
+
 # 1.0.0 (2021-05-27)
 
 

@@ -2,7 +2,7 @@
   "name": "gol.ms-website",
   "private": true,
   "description": "The personal website from Simon Golms",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "author": "Simon Golms <simon@gol.ms>",
   "dependencies": {
     "next": "^10.2.3",
