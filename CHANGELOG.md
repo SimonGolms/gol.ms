@@ -1,3 +1,10 @@
+## [1.1.1](https://github.com/simongolms/gol.ms/compare/v1.1.0...v1.1.1) (2021-05-27)
+
+
+### Bug Fixes
+
+* **sso:** reduce background image size ([ccec29e](https://github.com/simongolms/gol.ms/commit/ccec29e164f2b7da15fd15f05f03cac6df4273e2))
+
 # [1.1.0](https://github.com/simongolms/gol.ms/compare/v1.0.0...v1.1.0) (2021-05-27)
 
 
