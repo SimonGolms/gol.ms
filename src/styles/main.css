@@ -1,0 +1,6 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import './../components/TypeWriter/Cursor/index.css';
+@import './../components/TypeWriter/index.css';
