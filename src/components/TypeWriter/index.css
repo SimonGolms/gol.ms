@@ -1,0 +1,36 @@
+.typewriter {
+  overflow: hidden;
+  white-space: nowrap;
+  max-width: fit-content;
+  animation-direction: normal;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
+}
+
+.typewriter.write {
+  animation-name: width-grow;
+  width: 100%;
+}
+
+.typewriter.delete {
+  animation-name: width-shrink;
+  width: 0%;
+}
+
+@keyframes width-grow {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes width-shrink {
+  from {
+    width: 100%;
+  }
+  to {
+    width: 0%;
+  }
+}
