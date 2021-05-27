@@ -30,12 +30,12 @@ export const TypeWriterText: React.FC<TypeWriterTextProps> = ({ active = false, 
   return (
     <>
       <div
-        className={`text-2xl inline-block font-light text-black lg:text-5xl md:text-3xl  dark:text-white typewriter ${statusClassNames}`}
+        className={`inline-block text-2xl font-light text-black align-vertical lg:text-5xl md:text-3xl dark:text-white typewriter ${statusClassNames}`}
         style={{ animationDuration: `${duration}ms` }}
       >
         {children}
       </div>
-      {active && <Cursor className="h-6 text-black lg:h-16 md:h-8 dark:text-white" />}
+      {active && <Cursor className="text-black align-vertical h-7 lg:h-12 md:h-8 dark:text-white" />}
     </>
   );
 };
