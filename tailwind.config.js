@@ -1,4 +1,5 @@
 module.exports = {
+  mode: 'jit',
   purge: ['./src/**/*.{js,ts,jsx,tsx}'],
   darkMode: 'class',
   theme: {
@@ -13,6 +14,10 @@ module.exports = {
       }),
     },
   },
-  variants: {},
+  variants: {
+    extend: {
+      backgroundImage: ['dark'],
+    },
+  },
   plugins: [],
 };

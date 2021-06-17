@@ -1,27 +1,14 @@
 {
   "extends": [
-    "plugin:react/recommended",
+    "next",
     "plugin:@typescript-eslint/recommended",
     "plugin:import/recommended",
     "plugin:import/typescript",
+    "plugin:jsx-a11y/recommended",
     "plugin:prettier/recommended"
   ],
-  "plugins": ["@typescript-eslint", "react", "prettier"],
-  "parserOptions": {
-    "project": "./tsconfig.json"
-  },
-  "settings": {
-    "react": {
-      "version": "detect"
-    }
-  },
+  "plugins": ["@typescript-eslint", "jsx-a11y", "prettier"],
   "rules": {
-    "prettier/prettier": "error",
-    "react/react-in-jsx-scope": "off", // Use new JSX transform with babel
-    "react/prop-types": "off", // Disable prop-types as we use TypeScript for type checking
-    "react/destructuring-assignment": "off", // Vscode doesn't support automatically destructuring, it's a pain to add a new variable
-    "jsx-a11y/anchor-is-valid": "off", // Next.js use his own internal link system
-    "react/require-default-props": "off", // Allow non-defined react props as undefined
     "import/order": [
       "error",
       {
@@ -41,11 +28,6 @@
       }
     ],
     "import/prefer-default-export": "off",
-    "@typescript-eslint/no-unused-vars": [
-      "error",
-      {
-        "argsIgnorePattern": "^_"
-      }
-    ]
+    "prettier/prettier": "error"
   }
 }

@@ -22,6 +22,7 @@ export const TypeWriter: React.FC<TypeWriterProps> = ({ data, rotateSpeed = 2000
     setTimeout(() => {
       setIndex(nextIndex);
     }, timeout);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [index]);
 
   return (
