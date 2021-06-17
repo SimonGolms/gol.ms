@@ -13,6 +13,19 @@ module.exports = {
         'hero-light': "url('/assets/images/background-light.jpg')",
       }),
     },
+    // Fix the viewport height issue on mobile browsers
+    height: (theme) => ({
+      auto: 'auto',
+      ...theme('spacing'),
+      full: '100%',
+      screen: 'calc(var(--vh) * 100)',
+    }),
+    minHeight: (theme) => ({
+      0: '0',
+      ...theme('spacing'),
+      full: '100%',
+      screen: 'calc(var(--vh) * 100)',
+    }),
   },
   variants: {
     extend: {

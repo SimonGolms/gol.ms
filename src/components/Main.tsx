@@ -1,3 +1,4 @@
+import { useViewHeightIosFix } from '../utils/useViewHeightIosFix';
 import { Footer } from './Footer';
 import { Header } from './Header';
 import { TypeWriter } from './TypeWriter';
@@ -7,8 +8,10 @@ type Props = {
 };
 
 export const Main: React.FC<Props> = ({ meta }) => {
+  useViewHeightIosFix();
+
   return (
-    <div className="flex flex-col items-center justify-between flex-grow flex-shrink w-screen h-screen antialiased bg-center bg-no-repeat bg-cover bg-hero-light dark:bg-hero-dark ">
+    <div className="flex flex-col items-center justify-between flex-grow flex-shrink w-screen h-screen min-h-screen antialiased bg-center bg-no-repeat bg-cover bg-hero-light dark:bg-hero-dark ">
       {meta}
       <Header />
       <div className="mx-5 md:mx-6 lg:mx-8 ">
