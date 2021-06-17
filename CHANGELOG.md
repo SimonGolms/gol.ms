@@ -1,3 +1,10 @@
+## [1.1.4](https://github.com/simongolms/gol.ms/compare/v1.1.3...v1.1.4) (2021-06-17)
+
+
+### Bug Fixes
+
+* viewport height on mobile (ios) browser ([db9b58f](https://github.com/simongolms/gol.ms/commit/db9b58f1832569bda854cf700816def6253d4934))
+
 ## [1.1.3](https://github.com/simongolms/gol.ms/compare/v1.1.2...v1.1.3) (2021-05-27)
 
 
