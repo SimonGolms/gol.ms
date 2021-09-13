@@ -56,7 +56,7 @@
     "export": "next export -o dist",
     "prepare": "husky install",
     "release:ci": "semantic-release",
-    "repair": "npx rimraf .next dist node_modules && npm install",
+    "repair": "npx rimraf .git/hooks .next dist node_modules package-lock.json && npm install",
     "lint": "eslint --ext .js,.jsx,.ts,.tsx ."
   },
   "repository": {
