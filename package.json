@@ -13,8 +13,8 @@
     "styled-jsx-plugin-postcss": "^4.0.1"
   },
   "devDependencies": {
-    "@commitlint/cli": "^13.1.0",
-    "@commitlint/config-conventional": "^13.1.0",
+    "@commitlint/cli": "^13.2.1",
+    "@commitlint/config-conventional": "^13.2.0",
     "@next/bundle-analyzer": "^11.1.2",
     "@semantic-release/changelog": "^6.0.0",
     "@semantic-release/git": "^10.0.0",
@@ -29,8 +29,8 @@
     "eslint-plugin-import": "^2.24.2",
     "eslint-plugin-jsx-a11y": "^6.4.1",
     "eslint-plugin-prettier": "^4.0.0",
-    "husky": "^7.0.2",
-    "lint-staged": "^11.1.2",
+    "husky": "^7.0.4",
+    "lint-staged": "^11.2.6",
     "postcss": "^8.3.6",
     "prettier": "^2.4.0",
     "semantic-release": "^18.0.0",
@@ -56,7 +56,7 @@
     "export": "next export -o dist",
     "prepare": "husky install",
     "release:ci": "semantic-release",
-    "repair": "npx rimraf .git/hooks .next dist node_modules package-lock.json && npm install",
+    "repair": "npx rimraf .git/hooks .next dist node_modules package-lock.json && npm install --force",
     "lint": "eslint --ext .js,.jsx,.ts,.tsx ."
   },
   "repository": {
