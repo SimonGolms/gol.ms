@@ -38,16 +38,6 @@
     "typescript": "^4.4.4"
   },
   "license": "MIT",
-  "lint-staged": {
-    "*.{js,jsx,ts,tsx}": [
-      "prettier --write",
-      "eslint --fix",
-      "eslint"
-    ],
-    "*.json": [
-      "prettier --write"
-    ]
-  },
   "scripts": {
     "dev": "next --port 8080",
     "build": "next build",
