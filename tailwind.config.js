@@ -1,6 +1,6 @@
 module.exports = {
   mode: 'jit',
-  purge: ['./src/**/*.{js,ts,jsx,tsx}'],
+  content: ['./src/**/*.{js,ts,jsx,tsx}'],
   darkMode: 'class',
   theme: {
     extend: {
@@ -26,11 +26,6 @@ module.exports = {
       full: '100%',
       screen: 'calc(var(--vh) * 100)',
     }),
-  },
-  variants: {
-    extend: {
-      backgroundImage: ['dark'],
-    },
   },
   plugins: [],
 };
