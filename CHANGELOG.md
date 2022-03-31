@@ -1,3 +1,10 @@
+### [1.1.6](https://github.com/simongolms/gol.ms/compare/v1.1.5...v1.1.6) (2022-03-31)
+
+
+### Build System
+
+* set up code scanning alerts ([0ccf4be](https://github.com/simongolms/gol.ms/commit/0ccf4be5c435b68ac5829285242e5e86f79d1105))
+
 ### [1.1.5](https://github.com/simongolms/gol.ms/compare/v1.1.4...v1.1.5) (2022-03-31)
 
 
