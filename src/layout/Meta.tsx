@@ -3,11 +3,11 @@ import Head from 'next/head';
 import { config } from '../utils/config';
 
 type Props = {
-  title?: string;
-  description?: string;
   canonical?: string;
+  description?: string;
   locale?: string;
   siteName?: string;
+  title?: string;
 };
 
 const Meta: React.FC<Props> = ({
@@ -15,16 +15,16 @@ const Meta: React.FC<Props> = ({
   description = config.description,
   canonical = config.canonical,
   locale = config.locale,
-  siteName = config.site_name,
+  siteName = config.siteName,
 }) => (
   <>
     <Head>
-      <meta charSet="UTF-8" key="charset" />
-      <meta name="viewport" content="width=device-width,initial-scale=1" key="viewport" />
-      <link rel="apple-touch-icon" sizes="180x180" href={`${process.env.baseUrl}/apple-touch-icon.png`} key="apple" />
-      <link rel="icon" type="image/png" sizes="32x32" href={`${process.env.baseUrl}/favicon-32x32.png`} key="icon32" />
-      <link rel="icon" type="image/png" sizes="16x16" href={`${process.env.baseUrl}/favicon-16x16.png`} key="icon16" />
-      <link rel="icon" href={`${process.env.baseUrl}/favicon.ico`} key="favicon" />
+      <meta key="charset" charSet="UTF-8" />
+      <meta key="viewport" content="width=device-width,initial-scale=1" name="viewport" />
+      <link key="apple" href={`${process.env.baseUrl}/apple-touch-icon.png`} rel="apple-touch-icon" sizes="180x180" />
+      <link key="icon32" href={`${process.env.baseUrl}/favicon-32x32.png`} rel="icon" sizes="32x32" type="image/png" />
+      <link key="icon16" href={`${process.env.baseUrl}/favicon-16x16.png`} rel="icon" sizes="16x16" type="image/png" />
+      <link key="favicon" href={`${process.env.baseUrl}/favicon.ico`} rel="icon" />
     </Head>
     <NextSeo
       canonical={canonical}
@@ -33,13 +33,14 @@ const Meta: React.FC<Props> = ({
         description,
         images: [
           {
+            alt: 'Open Graph Image',
+            height: 600,
             url: `${process.env.baseUrl}/og-image.jpg`,
             width: 800,
-            height: 600,
-            alt: 'Open Graph Image',
           },
         ],
         locale,
+        // eslint-disable-next-line camelcase
         site_name: siteName,
         title,
         type: 'website',

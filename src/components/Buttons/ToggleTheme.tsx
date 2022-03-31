@@ -5,10 +5,7 @@ export const ToggleTheme: React.FC = () => {
   const [theme, setTheme] = useState('light');
 
   useEffect(() => {
-    if (
-      localStorage.theme === 'dark' ||
-      (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)
-    ) {
+    if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
       document.documentElement.classList.add('dark');
       setTheme('dark');
     } else {
@@ -29,12 +26,7 @@ export const ToggleTheme: React.FC = () => {
   };
 
   return (
-    <button
-      aria-label="Toggle Theme"
-      className="text-4xl text-gray-900 dark:text-white"
-      onClick={handleOnClick}
-      type="button"
-    >
+    <button aria-label="Toggle Theme" className="text-4xl text-gray-900 dark:text-white" type="button" onClick={handleOnClick}>
       {theme === 'dark' ? <IoSunnySharp /> : <IoMoonSharp />}
     </button>
   );

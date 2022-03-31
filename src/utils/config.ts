@@ -3,6 +3,6 @@ export const config = {
   description:
     'I am Simon, an App & Website Developer, Tekkie, Sportsman and Traveler with love for filter coffee and a good beer and so much more... Find it out.',
   locale: 'en',
-  site_name: 'Simon Golms | App & Website Developer',
+  siteName: 'Simon Golms | App & Website Developer',
   title: 'Simon Golms | App & Website Developer',
 };

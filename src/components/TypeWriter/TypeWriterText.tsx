@@ -1,12 +1,6 @@
 import { useEffect, useMemo, useState } from 'react';
 import { Cursor } from './Cursor';
 
-export type TypeWriterTextProps = {
-  active?: boolean;
-  duration: number;
-  rotateSpeed: number; // How long typewriting animation show a full element
-};
-
 export const TypeWriterText: React.FC<TypeWriterTextProps> = ({ active = false, children, duration, rotateSpeed }) => {
   const [isWriting, setIsWriting] = useState(true);
   useEffect(() => {
@@ -38,4 +32,10 @@ export const TypeWriterText: React.FC<TypeWriterTextProps> = ({ active = false, 
       {active && <Cursor className="text-black align-vertical h-7 lg:h-12 md:h-8 dark:text-white" />}
     </>
   );
+};
+
+type TypeWriterTextProps = {
+  active?: boolean;
+  duration: number;
+  rotateSpeed: number; // How long typewriting animation show a full element
 };

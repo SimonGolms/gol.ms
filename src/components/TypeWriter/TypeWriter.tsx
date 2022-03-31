@@ -1,12 +1,6 @@
 import { useEffect, useMemo, useState } from 'react';
 import { TypeWriterText } from './TypeWriterText';
 
-export type TypeWriterProps = {
-  data: string[];
-  rotateSpeed?: number; // How long typewriting animation show a full element
-  typeSpeed?: number; // Speed of typewriting animation.
-};
-
 export const TypeWriter: React.FC<TypeWriterProps> = ({ data, rotateSpeed = 2000, typeSpeed = 150 }) => {
   const dataItems = useMemo(() => {
     return data.map((text) => ({ duration: text.length * typeSpeed, text }));
@@ -28,10 +22,16 @@ export const TypeWriter: React.FC<TypeWriterProps> = ({ data, rotateSpeed = 2000
   return (
     <>
       {dataItems.map((item, itemIndex) => (
-        <TypeWriterText active={itemIndex === index} duration={item.duration} key={item.text} rotateSpeed={rotateSpeed}>
+        <TypeWriterText key={item.text} active={itemIndex === index} duration={item.duration} rotateSpeed={rotateSpeed}>
           {item.text}
         </TypeWriterText>
       ))}
     </>
   );
+};
+
+type TypeWriterProps = {
+  data: string[];
+  rotateSpeed?: number; // How long typewriting animation show a full element
+  typeSpeed?: number; // Speed of typewriting animation.
 };

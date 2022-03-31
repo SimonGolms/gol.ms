@@ -15,9 +15,7 @@ export const Main: React.FC<Props> = ({ meta }) => {
       {meta}
       <Header />
       <div className="mx-5 md:mx-6 lg:mx-8 ">
-        <h1 className="py-5 text-5xl text-black md:py-6 lg:py-8 lg:text-8xl md:text-6xl dark:text-white ">
-          Hi, I am Simon
-        </h1>
+        <h1 className="py-5 text-5xl text-black md:py-6 lg:py-8 lg:text-8xl md:text-6xl dark:text-white ">Hi, I am Simon</h1>
         <TypeWriter
           data={[
             'App & Website Developer',
