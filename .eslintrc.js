@@ -76,13 +76,6 @@ module.exports = {
     'react/react-in-jsx-scope': 'off',
     'react-hooks/exhaustive-deps': 'error',
     'react-hooks/rules-of-hooks': 'error',
-    // SonarJs: No errors yet, but should be fixed and avoided in the future
-    'sonarjs/cognitive-complexity': 'warn',
-    'sonarjs/no-collapsible-if': 'warn',
-    'sonarjs/no-duplicate-string': 'warn',
-    'sonarjs/no-identical-functions': 'warn',
-    'sonarjs/no-nested-switch': 'warn',
-    'sonarjs/no-nested-template-literals': 'warn',
     // Required to fix sort-keys automatically, since this is not done by default.
     'sort-keys-fix/sort-keys-fix': [
       'error',
