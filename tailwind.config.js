@@ -1,8 +1,9 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  mode: 'jit',
   content: ['./src/**/*.{js,ts,jsx,tsx}'],
   darkMode: 'class',
+  mode: 'jit',
+  plugins: [],
   theme: {
     extend: {
       backgroundColor: () => ({
@@ -28,5 +29,4 @@ module.exports = {
       screen: 'calc(var(--vh) * 100)',
     }),
   },
-  plugins: [],
 };
