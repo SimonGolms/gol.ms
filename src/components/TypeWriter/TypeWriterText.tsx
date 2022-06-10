@@ -36,6 +36,7 @@ export const TypeWriterText: React.FC<TypeWriterTextProps> = ({ active = false, 
 
 type TypeWriterTextProps = {
   active?: boolean;
+  children: React.ReactNode;
   duration: number;
   rotateSpeed: number; // How long typewriting animation show a full element
 };
