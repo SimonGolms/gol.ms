@@ -3,7 +3,11 @@
   "private": true,
   "description": "The personal website from Simon Golms",
   "version": "1.1.6",
-  "author": "Simon Golms <simon@gol.ms>",
+  "author": {
+    "name": "Simon Golms",
+    "email": "development@gol.ms",
+    "url": "https://gol.ms"
+  },
   "dependencies": {
     "next": "12.1.6",
     "next-seo": "5.4.0",
