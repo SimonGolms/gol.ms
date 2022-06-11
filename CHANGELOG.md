@@ -1,3 +1,34 @@
+## [1.1.7](https://github.com/simongolms/gol.ms/compare/v1.1.6...v1.1.7) (2022-06-11)
+
+
+### Bug Fixes
+
+* **types:** add children type ([c4a3e8a](https://github.com/simongolms/gol.ms/commit/c4a3e8a51c2c3207813ee0868258206164549cee))
+
+
+### Code Refactoring
+
+* remove obsolete configuraiton files ([9eae658](https://github.com/simongolms/gol.ms/commit/9eae65839aa6eb37a3c3c549633bc53d07c7c7d3))
+
+
+### Build System
+
+* **tailwind:** add type annotation to config file ([1abc7cf](https://github.com/simongolms/gol.ms/commit/1abc7cf4be92eee3b1a53110cf30b8ef00b1e034))
+* **lint:** remove custom sonarjs rules ([d3e9588](https://github.com/simongolms/gol.ms/commit/d3e9588930f3fd1829e817323b208a8f7b722ece))
+* update author information ([19cf498](https://github.com/simongolms/gol.ms/commit/19cf49899b77ea1a76d383eeadbedb159d94a5ac))
+* **deps:** update dev dependencies ([6890521](https://github.com/simongolms/gol.ms/commit/68905216c24995d80a1fe07d96532cb1d38ea96c))
+* **deps:** update dev dependencies ([f75d4d9](https://github.com/simongolms/gol.ms/commit/f75d4d9bf8779a7fec7158dd3c11abdce7d3ad78))
+* update git hooks ([b84d24a](https://github.com/simongolms/gol.ms/commit/b84d24a8ef46d20c180e5b89d569c804c3854da5))
+* **deps:** update lint dependencies ([dd3d728](https://github.com/simongolms/gol.ms/commit/dd3d72895be79e15cf1124f0852582e876496db2))
+* **deps:** update prod dependencies ([f4ad258](https://github.com/simongolms/gol.ms/commit/f4ad258aaf0834c01577f2d99fc44944574bffe8))
+* **deps:** update types dependencies ([d8aa8be](https://github.com/simongolms/gol.ms/commit/d8aa8beb1c7a190c4299e3f39e8d337f2bd0d209))
+
+
+### Styles
+
+* **lint:** sort object keys in natural insensitive ascending order ([aed7d12](https://github.com/simongolms/gol.ms/commit/aed7d1297a15586d0980db65fcbd5dcc3771b8d6))
+* sorting ([cb44d51](https://github.com/simongolms/gol.ms/commit/cb44d5170a3012626fd9cf89f632104e24ba2596))
+
 ### [1.1.6](https://github.com/simongolms/gol.ms/compare/v1.1.5...v1.1.6) (2022-03-31)
 
 
