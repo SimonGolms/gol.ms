@@ -1,3 +1,10 @@
+## [1.1.8](https://github.com/simongolms/gol.ms/compare/v1.1.7...v1.1.8) (2022-06-20)
+
+
+### Build System
+
+* **deps:** update dependencies ([c1e1d6b](https://github.com/simongolms/gol.ms/commit/c1e1d6bd89b51700bea3c2b71f4852e8ff658765))
+
 ## [1.1.7](https://github.com/simongolms/gol.ms/compare/v1.1.6...v1.1.7) (2022-06-11)
 
 
