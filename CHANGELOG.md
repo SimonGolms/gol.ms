@@ -1,3 +1,11 @@
+## [1.1.9](https://github.com/simongolms/gol.ms/compare/v1.1.8...v1.1.9) (2022-06-30)
+
+
+### Build System
+
+* **husky:** fix commit-msg hook to handle git parameter ([a3ba6a4](https://github.com/simongolms/gol.ms/commit/a3ba6a4ee78aea549201a92749685543146e25c3))
+* **deps:** update dependencies ([bd448b5](https://github.com/simongolms/gol.ms/commit/bd448b55dd9ce56a737437d48c51af6d51d164e6))
+
 ## [1.1.8](https://github.com/simongolms/gol.ms/compare/v1.1.7...v1.1.8) (2022-06-20)
 
 
