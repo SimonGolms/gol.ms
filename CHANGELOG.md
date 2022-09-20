@@ -1,3 +1,15 @@
+## [1.1.10](https://github.com/simongolms/gol.ms/compare/v1.1.9...v1.1.10) (2022-09-20)
+
+
+### Continuous Integration
+
+* **github:** release in my name ([faa7192](https://github.com/simongolms/gol.ms/commit/faa71922a253677d49a46a671d7eb823dd020a7a))
+
+
+### Build System
+
+* **deps:** update dependencies ([c749dce](https://github.com/simongolms/gol.ms/commit/c749dce2f7b5acd9e9a6398495e20362d0aa9fc8))
+
 ## [1.1.9](https://github.com/simongolms/gol.ms/compare/v1.1.8...v1.1.9) (2022-06-30)
 
 
