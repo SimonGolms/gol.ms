@@ -1,3 +1,15 @@
+## [1.1.12](https://github.com/simongolms/gol.ms/compare/v1.1.11...v1.1.12) (2022-10-31)
+
+
+### Build System
+
+* **deps:** update dependencies ([d14addf](https://github.com/simongolms/gol.ms/commit/d14addf4ac32d7cfa6b73954e33cf08e4b50f432))
+
+
+### Continuous Integration
+
+* **github:** use nodejs v18 in workflow ([c794d68](https://github.com/simongolms/gol.ms/commit/c794d681524379f00f4b15417368f1ecd7c0b547))
+
 ## [1.1.11](https://github.com/simongolms/gol.ms/compare/v1.1.10...v1.1.11) (2022-10-24)
 
 
